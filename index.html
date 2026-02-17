@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EJM Tech — Technology Consulting for Mission-Driven Organizations</title>
+  <meta name="description" content="EJM Tech helps nonprofits and community organizations build the technology foundations they need — IT planning, digital security, web development, and more.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="EJM Tech — Technology Consulting for Mission-Driven Organizations">
+  <meta property="og:description" content="Practical technology guidance for nonprofits and community organizations. IT planning, digital security, web development, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ejmtech.net">
+  <meta property="og:image" content="https://ejmtech.net/img/ejmtech-icon-logo.png">
+
+  <!-- Vanilla Framework -->
+  <link rel="stylesheet" href="css/vanilla-framework.min.css">
+  <!-- EJM Tech custom overrides -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <!-- ====================================================================
+       NAVIGATION
+       ==================================================================== -->
+  <header id="navigation" class="p-navigation">
+    <div class="p-navigation__row">
+      <div class="p-navigation__banner">
+        <div class="p-navigation__logo">
+          <a class="p-navigation__link ejm-logo" href="#">EJM <span>TECH</span></a>
+        </div>
+        <a href="#" class="p-navigation__toggle--open" title="Open menu">Menu</a>
+        <a href="#" class="p-navigation__toggle--close" title="Close menu">Close menu</a>
+      </div>
+      <nav class="p-navigation__nav" aria-label="Main navigation">
+        <ul class="p-navigation__items">
+          <li class="p-navigation__item"><a class="p-navigation__link" href="#services">Services</a></li>
+          <li class="p-navigation__item"><a class="p-navigation__link" href="#flagship">Sentinel Chicago</a></li>
+          <li class="p-navigation__item"><a class="p-navigation__link" href="#about">About</a></li>
+          <li class="p-navigation__item"><a class="p-navigation__link" href="#contact">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       HERO
+       ==================================================================== -->
+  <section class="p-section ejm-hero">
+    <div class="u-fixed-width">
+      <div class="row">
+        <div class="col-7 col-medium-4">
+          <p class="ejm-hero__label">Technology Consulting</p>
+          <h1>Your mission is too important for technology to get in the way.</h1>
+          <p class="ejm-hero__subtitle">EJM Tech helps nonprofits and community organizations build the technology foundations they need — so they can focus on the work that matters.</p>
+          <div class="ejm-hero__cta">
+            <a href="#contact" class="p-button--positive">Start a Conversation</a>
+            <a href="#services" class="p-button">See How We Help</a>
+          </div>
+        </div>
+        <div class="col-5 col-medium-2 ejm-hero__graphic-col">
+          <svg class="ejm-hero__graphic" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Large ring -->
+            <circle cx="200" cy="200" r="150" fill="none" stroke="#2D6A4F" stroke-width="1.5" opacity="0.2"/>
+            <!-- Medium ring -->
+            <circle cx="200" cy="200" r="100" fill="none" stroke="#40916C" stroke-width="1" opacity="0.25"/>
+            <!-- Small ring -->
+            <circle cx="200" cy="200" r="50" fill="none" stroke="#2D6A4F" stroke-width="1" opacity="0.3"/>
+            <!-- Accent dots on the rings -->
+            <circle cx="200" cy="50" r="6" fill="#2D6A4F" opacity="0.6"/>
+            <circle cx="330" cy="130" r="5" fill="#40916C" opacity="0.5"/>
+            <circle cx="300" cy="300" r="7" fill="#B5651D" opacity="0.5"/>
+            <circle cx="80" cy="250" r="5" fill="#2D6A4F" opacity="0.4"/>
+            <circle cx="120" cy="110" r="4" fill="#40916C" opacity="0.5"/>
+            <!-- Connecting lines -->
+            <line x1="200" y1="50" x2="330" y2="130" stroke="#2D6A4F" stroke-width="0.8" opacity="0.15"/>
+            <line x1="330" y1="130" x2="300" y2="300" stroke="#40916C" stroke-width="0.8" opacity="0.12"/>
+            <line x1="300" y1="300" x2="80" y2="250" stroke="#2D6A4F" stroke-width="0.8" opacity="0.12"/>
+            <line x1="80" y1="250" x2="120" y2="110" stroke="#40916C" stroke-width="0.8" opacity="0.15"/>
+            <line x1="120" y1="110" x2="200" y2="50" stroke="#2D6A4F" stroke-width="0.8" opacity="0.12"/>
+            <!-- Center dot -->
+            <circle cx="200" cy="200" r="8" fill="#2D6A4F" opacity="0.35"/>
+            <!-- Radial lines from center -->
+            <line x1="200" y1="200" x2="200" y2="50" stroke="#2D6A4F" stroke-width="0.6" opacity="0.1"/>
+            <line x1="200" y1="200" x2="330" y2="130" stroke="#2D6A4F" stroke-width="0.6" opacity="0.1"/>
+            <line x1="200" y1="200" x2="300" y2="300" stroke="#2D6A4F" stroke-width="0.6" opacity="0.1"/>
+            <line x1="200" y1="200" x2="80" y2="250" stroke="#2D6A4F" stroke-width="0.6" opacity="0.1"/>
+            <line x1="200" y1="200" x2="120" y2="110" stroke="#2D6A4F" stroke-width="0.6" opacity="0.1"/>
+            <!-- Floating accent shapes -->
+            <rect x="280" y="70" width="20" height="20" rx="4" fill="none" stroke="#B5651D" stroke-width="1" opacity="0.25" transform="rotate(15 290 80)"/>
+            <rect x="90" y="300" width="16" height="16" rx="3" fill="none" stroke="#B5651D" stroke-width="1" opacity="0.2" transform="rotate(-10 98 308)"/>
+            <!-- Subtle arcs -->
+            <path d="M 140 80 A 120 120 0 0 1 320 160" fill="none" stroke="#40916C" stroke-width="0.6" opacity="0.12"/>
+            <path d="M 260 320 A 120 120 0 0 1 80 180" fill="none" stroke="#2D6A4F" stroke-width="0.6" opacity="0.1"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       SERVICES
+       ==================================================================== -->
+  <section class="p-section ejm-services" id="services">
+    <div class="u-fixed-width fade-in">
+      <p class="ejm-section-label">Services</p>
+      <h2>Practical technology guidance, built around your needs</h2>
+      <p class="ejm-section-desc">We work alongside your team to assess, plan, and implement the right technology — not the most expensive or complicated, but the tools that actually fit your organization.</p>
+    </div>
+    <div class="u-fixed-width fade-in">
+      <div class="row">
+        <div class="col-3 col-medium-3">
+          <div class="p-card">
+            <i class="p-icon--information p-icon--large ejm-service-icon"></i>
+            <h3 class="p-card__title p-heading--4">IT Planning &amp; Systems Assessment</h3>
+            <p>We evaluate your current tools and workflows, identify gaps, recommend solutions that fit your budget and capacity, and help you implement them — with training so your team feels confident.</p>
+          </div>
+        </div>
+        <div class="col-3 col-medium-3">
+          <div class="p-card">
+            <i class="p-icon--warning p-icon--large ejm-service-icon"></i>
+            <h3 class="p-card__title p-heading--4">Digital Security Basics</h3>
+            <p>We help your team get the fundamentals right — password management, access controls, two-factor authentication, and safe practices for handling sensitive data. Practical security hygiene, not a compliance checklist.</p>
+          </div>
+        </div>
+        <div class="col-3 col-medium-3">
+          <div class="p-card">
+            <i class="p-icon--code p-icon--large ejm-service-icon"></i>
+            <h3 class="p-card__title p-heading--4">Website Development &amp; Digital Presence</h3>
+            <p>From new builds to redesigns, we create websites that represent your mission clearly and work reliably — designed around what your audience and stakeholders actually need.</p>
+          </div>
+        </div>
+        <div class="col-3 col-medium-3">
+          <div class="p-card">
+            <i class="p-icon--anchor p-icon--large ejm-service-icon"></i>
+            <h3 class="p-card__title p-heading--4">Domain &amp; Infrastructure Setup</h3>
+            <p>Domain registration, DNS configuration, email setup, hosting — we handle the technical plumbing that keeps your organization running smoothly online.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 col-medium-3">
+          <div class="p-card">
+            <i class="p-icon--search p-icon--large ejm-service-icon"></i>
+            <h3 class="p-card__title p-heading--4">Technology Evaluations &amp; Recommendations</h3>
+            <p>Choosing between platforms, tools, or vendors? We cut through the noise with clear, unbiased assessments tailored to your organization's size, goals, and budget.</p>
+          </div>
+        </div>
+        <div class="col-3 col-medium-3">
+          <div class="p-card">
+            <i class="p-icon--copy p-icon--large ejm-service-icon"></i>
+            <h3 class="p-card__title p-heading--4">Data Management &amp; Organization</h3>
+            <p>We help you structure, organize, and manage your data — from file systems and databases to reporting workflows — so your information works for you instead of against you.</p>
+          </div>
+        </div>
+        <div class="col-3 col-medium-3">
+          <div class="p-card">
+            <i class="p-icon--plus p-icon--large ejm-service-icon"></i>
+            <h3 class="p-card__title p-heading--4">AI Readiness &amp; Tool Integration</h3>
+            <p>AI tools are everywhere, but not all of them are worth your time. We help you sort through the noise, identify what's actually useful for your work, and integrate it into your existing workflows.</p>
+          </div>
+        </div>
+        <div class="col-3 col-medium-3">
+          <div class="p-card">
+            <i class="p-icon--user p-icon--large ejm-service-icon"></i>
+            <h3 class="p-card__title p-heading--4">Staff Technology Training</h3>
+            <p>New tools only work if your team knows how to use them. We provide hands-on guidance and training so your staff feels confident with the systems they rely on every day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FLAGSHIP: SENTINEL CHICAGO
+       ==================================================================== -->
+  <section class="p-section ejm-flagship" id="flagship">
+    <div class="u-fixed-width fade-in">
+      <p class="ejm-section-label">Flagship Project</p>
+    </div>
+    <div class="u-fixed-width fade-in">
+      <div class="row">
+        <div class="col-6 col-medium-3">
+          <h2>Sentinel Chicago</h2>
+          <p>We don't just advise — we build. <span class="highlight">Sentinel Chicago</span> is EJM Tech's flagship initiative: a conservation organization using urban wildlife monitoring as an environmental health indicator for Chicago's underserved neighborhoods.</p>
+          <p>Currently in its founding stage, Sentinel is being built from the ground up — from a data platform that overlays public environmental datasets to community partnerships with Chicago's wildlife conservation network. It represents the full scope of what we do: strategy, data infrastructure, digital presence, and organizational technology, all applied to a mission we believe in deeply.</p>
+          <p>When we work with your organization, we bring the same hands-on commitment and technical depth we put into building Sentinel.</p>
+          <a href="https://sentinelchicago.org" class="ejm-flagship-link" target="_blank" rel="noopener noreferrer">Visit Sentinel Chicago &rarr;</a>
+        </div>
+        <div class="col-6 col-medium-3">
+          <div class="ejm-flagship-visual">
+            <h3 class="p-heading--3">Sentinel Chicago</h3>
+            <div class="tagline">Urban Wildlife &bull; Environmental Health &bull; Community Data</div>
+            <div class="ejm-flagship-stats">
+              <div class="ejm-flagship-stat">
+                <span class="number">Chicago</span>
+                <span class="label">Based in</span>
+              </div>
+              <div class="ejm-flagship-stat">
+                <span class="number">2026</span>
+                <span class="label">Founded</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       ABOUT
+       ==================================================================== -->
+  <section class="p-section" id="about">
+    <div class="u-fixed-width fade-in">
+      <p class="ejm-section-label">About</p>
+      <h2>Built by someone who understands your world</h2>
+    </div>
+    <div class="u-fixed-width fade-in">
+      <div class="row">
+        <div class="col-8 col-medium-4 ejm-about-text">
+          <p>EJM Tech is led by Eric Marty, a software engineer with over 15 years of professional experience spanning web development, healthcare technology, document management systems, and digital presence work for mission-driven organizations.</p>
+          <p>Eric's career has taken him from early-stage startups to enterprise healthcare software at Intelerad Medical Systems, with roles across the full stack — backend systems, frontend interfaces, and everything in between. That breadth of experience means he can meet organizations wherever they are technically and help them move forward.</p>
+          <p>Now founding Sentinel Chicago, Eric understands the realities of mission-driven work firsthand: limited budgets, small teams wearing many hats, and the pressure to deliver impact with constrained resources. That experience shapes every engagement.</p>
+          <p>EJM Tech isn't a large firm that treats your project as a line item. It's a hands-on consultancy where the person scoping the work is the same person doing the work — bringing deep technical expertise, clear communication, and genuine investment in your success.</p>
+        </div>
+        <div class="col-4 col-medium-2">
+          <div class="ejm-about-sidebar">
+            <h3>Areas of Focus</h3>
+            <ul class="p-list--divided">
+              <li class="p-list__item">Environmental Justice Organizations</li>
+              <li class="p-list__item">Conservation &amp; Wildlife Nonprofits</li>
+              <li class="p-list__item">Animal Welfare Organizations</li>
+              <li class="p-list__item">Community Advocacy Groups</li>
+              <li class="p-list__item">Mission-Driven Nonprofits</li>
+            </ul>
+            <h3 style="margin-top: 1.5rem;">Background</h3>
+            <ul class="p-list--divided">
+              <li class="p-list__item">15+ Years in Software Engineering</li>
+              <li class="p-list__item">Senior Engineer, Intelerad Medical Systems</li>
+              <li class="p-list__item">Founder, Sentinel Chicago</li>
+              <li class="p-list__item">Linux &amp; Open-Source Advocate</li>
+              <li class="p-list__item">Chicago, Illinois</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CONTACT
+       ==================================================================== -->
+  <section class="p-section ejm-contact" id="contact">
+    <div class="u-fixed-width fade-in">
+      <p class="ejm-section-label">Get in Touch</p>
+      <h2>Let's talk about what you need</h2>
+    </div>
+    <div class="u-fixed-width fade-in">
+      <div class="row">
+        <div class="col-6 col-medium-3">
+          <p>Whether you're dealing with a specific technology challenge or looking for a partner to help plan your organization's digital future, we'd love to hear from you. No pitch, no pressure — just a conversation about how we can help.</p>
+          <p style="color: var(--ejm-text-secondary); font-size: 0.9rem;">We typically respond within one business day.</p>
+          <svg class="ejm-contact__graphic" viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Rings -->
+            <circle cx="180" cy="140" r="110" fill="none" stroke="#2D6A4F" stroke-width="1.2" opacity="0.15"/>
+            <circle cx="180" cy="140" r="70" fill="none" stroke="#40916C" stroke-width="0.8" opacity="0.2"/>
+            <circle cx="180" cy="140" r="30" fill="none" stroke="#2D6A4F" stroke-width="0.8" opacity="0.25"/>
+            <!-- Nodes -->
+            <circle cx="180" cy="30" r="5" fill="#2D6A4F" opacity="0.5"/>
+            <circle cx="285" cy="100" r="4" fill="#40916C" opacity="0.45"/>
+            <circle cx="260" cy="220" r="6" fill="#B5651D" opacity="0.45"/>
+            <circle cx="80" cy="200" r="4" fill="#2D6A4F" opacity="0.4"/>
+            <circle cx="95" cy="80" r="5" fill="#40916C" opacity="0.45"/>
+            <!-- Connections -->
+            <line x1="180" y1="30" x2="285" y2="100" stroke="#2D6A4F" stroke-width="0.7" opacity="0.12"/>
+            <line x1="285" y1="100" x2="260" y2="220" stroke="#40916C" stroke-width="0.7" opacity="0.1"/>
+            <line x1="260" y1="220" x2="80" y2="200" stroke="#2D6A4F" stroke-width="0.7" opacity="0.1"/>
+            <line x1="80" y1="200" x2="95" y2="80" stroke="#40916C" stroke-width="0.7" opacity="0.12"/>
+            <line x1="95" y1="80" x2="180" y2="30" stroke="#2D6A4F" stroke-width="0.7" opacity="0.1"/>
+            <!-- Radials from center -->
+            <line x1="180" y1="140" x2="180" y2="30" stroke="#2D6A4F" stroke-width="0.5" opacity="0.08"/>
+            <line x1="180" y1="140" x2="285" y2="100" stroke="#2D6A4F" stroke-width="0.5" opacity="0.08"/>
+            <line x1="180" y1="140" x2="260" y2="220" stroke="#2D6A4F" stroke-width="0.5" opacity="0.08"/>
+            <line x1="180" y1="140" x2="80" y2="200" stroke="#2D6A4F" stroke-width="0.5" opacity="0.08"/>
+            <line x1="180" y1="140" x2="95" y2="80" stroke="#2D6A4F" stroke-width="0.5" opacity="0.08"/>
+            <!-- Center -->
+            <circle cx="180" cy="140" r="6" fill="#2D6A4F" opacity="0.3"/>
+            <!-- Floating accents -->
+            <rect x="40" y="50" width="14" height="14" rx="3" fill="none" stroke="#B5651D" stroke-width="0.8" opacity="0.2" transform="rotate(12 47 57)"/>
+            <path d="M 120 250 A 90 90 0 0 1 250 160" fill="none" stroke="#40916C" stroke-width="0.5" opacity="0.1"/>
+          </svg>
+        </div>
+        <div class="col-6 col-medium-3">
+          <div class="ejm-contact-form">
+            <h3 class="p-heading--4">Send a Message</h3>
+            <form action="https://usebasin.com/f/47921e94510dacb28fbe54c343aec21e" method="POST" class="p-form--stacked">
+              <!-- Basin honeypot — hidden from users, catches bots -->
+              <input type="hidden" name="_gotcha">
+              <div class="p-form__group">
+                <label for="name" class="p-form__label">Name</label>
+                <input type="text" id="name" name="name" class="p-form__control" placeholder="Your name" required>
+              </div>
+              <div class="p-form__group">
+                <label for="org" class="p-form__label">Organization</label>
+                <input type="text" id="org" name="org" class="p-form__control" placeholder="Your organization">
+              </div>
+              <div class="p-form__group">
+                <label for="email" class="p-form__label">Email</label>
+                <input type="email" id="email" name="email" class="p-form__control" placeholder="you@organization.org" required>
+              </div>
+              <div class="p-form__group">
+                <label for="message" class="p-form__label">How can we help?</label>
+                <textarea id="message" name="message" class="p-form__control" rows="5" placeholder="Tell us a bit about what you're looking for..." required></textarea>
+              </div>
+              <button type="submit" class="p-button--positive u-no-margin--bottom" style="width: 100%;">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="p-strip is-shallow ejm-footer">
+    <div class="u-fixed-width">
+      <p class="ejm-logo ejm-logo--footer">EJM <span>TECH</span></p>
+      <p>Technology consulting for mission-driven organizations &bull; Chicago, IL</p>
+      <p>&copy; 2026 EJM Tech &bull; Our flagship project: <a href="https://sentinelchicago.org" target="_blank" rel="noopener noreferrer">Sentinel Chicago</a></p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

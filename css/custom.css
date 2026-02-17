@@ -1,0 +1,475 @@
+/* ==========================================================================
+   EJM Tech — Custom Color & Theme Overrides for Vanilla Framework
+   ========================================================================== */
+
+:root {
+  /* EJM Tech Palette */
+  --ejm-green: #2D6A4F;
+  --ejm-green-light: #40916C;
+  --ejm-warm: #B5651D;
+  --ejm-bg: #FAFAF7;
+  --ejm-bg-alt: #F0EFEB;
+  --ejm-bg-dark: #1A2B1E;
+  --ejm-text: #2C2C2C;
+  --ejm-text-secondary: #5A5A5A;
+  --ejm-text-on-dark: #E8E6E1;
+  --ejm-border: #D4D1CA;
+}
+
+/* ==========================================================================
+   Global overrides
+   ========================================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--ejm-bg);
+  color: var(--ejm-text);
+}
+
+.p-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+.p-navigation {
+  background: rgba(250, 250, 247, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--ejm-border);
+  transition: box-shadow 0.3s ease;
+}
+
+.p-navigation.has-shadow {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+}
+
+.p-navigation__banner {
+  background: transparent;
+}
+
+.ejm-logo {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ejm-green);
+  text-decoration: none;
+}
+
+.ejm-logo span {
+  color: var(--ejm-warm);
+}
+
+.ejm-footer .ejm-logo--footer {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.p-navigation__items .p-navigation__link {
+  color: var(--ejm-text-secondary);
+  font-weight: 500;
+}
+
+.p-navigation__items .p-navigation__link:hover {
+  color: var(--ejm-green);
+}
+
+/* ==========================================================================
+   Buttons — positive variant uses EJM green
+   ========================================================================== */
+
+.p-button--positive {
+  background-color: var(--ejm-green);
+  border-color: var(--ejm-green);
+}
+
+.p-button--positive:hover {
+  background-color: var(--ejm-green-light);
+  border-color: var(--ejm-green-light);
+}
+
+.p-button--link {
+  color: var(--ejm-green);
+}
+
+.p-button {
+  border-color: var(--ejm-green);
+  color: var(--ejm-green);
+}
+
+.p-button:hover {
+  background-color: var(--ejm-green);
+  color: #fff;
+}
+
+/* ==========================================================================
+   Hero section
+   ========================================================================== */
+
+.ejm-hero {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  background-color: var(--ejm-bg);
+}
+
+.ejm-hero__label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ejm-green);
+  margin-bottom: 1.2rem;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 0.2s forwards;
+}
+
+.ejm-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  max-width: 720px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 0.35s forwards;
+}
+
+.ejm-hero__subtitle {
+  font-size: 1.15rem;
+  color: var(--ejm-text-secondary);
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 0.5s forwards;
+}
+
+.ejm-hero__graphic-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ejm-hero__graphic {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+}
+
+.ejm-hero__cta {
+  display: inline-flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 0.65s forwards;
+}
+
+/* ==========================================================================
+   Services section
+   ========================================================================== */
+
+.ejm-services {
+  background-color: var(--ejm-bg-alt);
+}
+
+.ejm-services .p-card {
+  border-color: var(--ejm-border);
+  border-top: 3px solid transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.ejm-services .p-card:hover {
+  border-color: var(--ejm-border);
+  border-top-color: var(--ejm-warm);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.ejm-service-icon {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   Section common styles
+   ========================================================================== */
+
+.ejm-section-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ejm-green);
+  margin-bottom: 0.5rem;
+}
+
+.ejm-section-desc {
+  font-size: 1.05rem;
+  color: var(--ejm-text-secondary);
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   Flagship — Sentinel Chicago (dark strip)
+   ========================================================================== */
+
+.ejm-flagship {
+  background-color: var(--ejm-bg-dark);
+  color: var(--ejm-text-on-dark);
+}
+
+.ejm-flagship .ejm-section-label {
+  color: var(--ejm-green-light);
+}
+
+.ejm-flagship h2 {
+  color: #fff;
+}
+
+.ejm-flagship p {
+  color: var(--ejm-text-on-dark);
+  line-height: 1.7;
+}
+
+.ejm-flagship .highlight {
+  color: var(--ejm-green-light);
+  font-weight: 500;
+}
+
+.ejm-flagship-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ejm-green-light);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  transition: gap 0.2s ease;
+}
+
+.ejm-flagship-link:visited {
+  color: var(--ejm-green-light);
+}
+
+.ejm-flagship-link:hover {
+  gap: 0.8rem;
+  color: #fff;
+}
+
+.ejm-flagship-visual {
+  background: linear-gradient(145deg, rgba(45, 106, 79, 0.2), rgba(64, 145, 108, 0.1));
+  border: 1px solid rgba(64, 145, 108, 0.25);
+  border-radius: 14px;
+  padding: 3rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.ejm-flagship-visual::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -30%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(64, 145, 108, 0.15), transparent 70%);
+  border-radius: 50%;
+}
+
+.ejm-flagship-visual h3 {
+  color: #fff;
+  position: relative;
+}
+
+.ejm-flagship-visual .tagline {
+  color: var(--ejm-green-light);
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.ejm-flagship-stats {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.ejm-flagship-stat {
+  text-align: center;
+}
+
+.ejm-flagship-stat .number {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+}
+
+.ejm-flagship-stat .label {
+  font-size: 0.78rem;
+  color: rgba(232, 230, 225, 0.7);
+  letter-spacing: 0.03em;
+}
+
+/* ==========================================================================
+   About section
+   ========================================================================== */
+
+.ejm-about-sidebar {
+  background: var(--ejm-bg-alt);
+  border: 1px solid var(--ejm-border);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.ejm-about-sidebar h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.ejm-about-sidebar h3 + ul {
+  margin-bottom: 0;
+}
+
+.ejm-about-sidebar .p-list__item {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: var(--ejm-text-secondary);
+}
+
+.ejm-about-text p {
+  color: var(--ejm-text-secondary);
+  line-height: 1.7;
+}
+
+.ejm-about-text p:first-of-type {
+  color: var(--ejm-text);
+  font-size: 1.08rem;
+}
+
+/* ==========================================================================
+   Contact section
+   ========================================================================== */
+
+.ejm-contact {
+  background-color: var(--ejm-bg-alt);
+}
+
+
+.ejm-contact__graphic {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.ejm-contact-form {
+  background: var(--ejm-bg);
+  border: 1px solid var(--ejm-border);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.ejm-footer {
+  background-color: #fff;
+  border-top: 1px solid var(--ejm-border);
+}
+
+.ejm-footer .u-fixed-width {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ejm-footer p {
+  font-size: 0.85rem;
+  color: var(--ejm-text-secondary);
+}
+
+.ejm-footer a {
+  color: var(--ejm-green);
+}
+
+.ejm-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Responsive adjustments
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .ejm-hero {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+  }
+
+  .ejm-hero__graphic-col {
+    display: none;
+  }
+
+  .ejm-hero__cta {
+    flex-direction: column;
+  }
+
+  .ejm-hero__cta .p-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .ejm-hero__cta .p-button--positive {
+    width: 100%;
+    text-align: center;
+  }
+
+  .ejm-flagship-visual {
+    padding: 2rem 1.5rem;
+  }
+
+  .ejm-flagship-stats {
+    flex-wrap: wrap;
+  }
+
+  .ejm-contact__graphic {
+    display: none;
+  }
+}
