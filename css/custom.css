@@ -265,7 +265,6 @@ body {
 .ejm-flagship-visual {
   background: linear-gradient(145deg, rgba(45, 106, 79, 0.2), rgba(64, 145, 108, 0.1));
   border: 1px solid rgba(64, 145, 108, 0.25);
-  border-radius: 14px;
   padding: 3rem 2.5rem;
   position: relative;
   overflow: hidden;
@@ -324,19 +323,15 @@ body {
 
 .ejm-about-sidebar {
   background: var(--ejm-bg-alt);
-  border: 1px solid var(--ejm-border);
-  border-radius: 10px;
-  padding: 1.5rem;
-}
-
-.ejm-about-sidebar h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.8rem;
+  border-color: var(--ejm-border);
 }
 
 .ejm-about-sidebar h3 + ul {
   margin-bottom: 0;
+}
+
+.ejm-about-sidebar__heading {
+  margin-top: 1.5rem;
 }
 
 .ejm-about-sidebar .p-list__item {
@@ -373,9 +368,16 @@ body {
 
 .ejm-contact-form {
   background: var(--ejm-bg);
-  border: 1px solid var(--ejm-border);
-  border-radius: 10px;
-  padding: 2rem;
+  border-color: var(--ejm-border);
+}
+
+.ejm-contact__note {
+  color: var(--ejm-text-secondary);
+  font-size: 0.9rem;
+}
+
+.ejm-contact__submit {
+  width: 100%;
 }
 
 /* ==========================================================================
