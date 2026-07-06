@@ -216,6 +216,42 @@ body {
 }
 
 /* ==========================================================================
+   Testimonial
+   ========================================================================== */
+
+.ejm-testimonial {
+  background-color: var(--ejm-bg-alt);
+}
+
+.ejm-quote {
+  margin: 0;
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--ejm-green);
+}
+
+.ejm-quote__text {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  color: var(--ejm-text);
+  margin-bottom: 1.25rem;
+}
+
+.ejm-quote__cite {
+  font-size: 1rem;
+}
+
+.ejm-quote__name {
+  display: block;
+  font-weight: 600;
+  color: var(--ejm-text);
+}
+
+.ejm-quote__role {
+  display: block;
+  color: var(--ejm-text-secondary);
+}
+
+/* ==========================================================================
    Flagship — Sentinel Chicago (dark strip)
    ========================================================================== */
 
